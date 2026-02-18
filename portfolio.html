@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+          <img src="../logo (1).png" alt="Bootstrap" />
+        </a>
+        <!-- button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 ms-auto mb-lg-0 gap-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about-me"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#blog"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact-me"
+                >Contact Me</a
+              >
+            </li>
+            <div class="d-none d-lg-block">
+              <a href="#" class="btn btn-primary rounded-pill px-4"
+                >Let's Chat</a
+              >
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container py-5" id="about-me">
+      <div class="row">
+        <div class="col-md-8 d-flex flex-column justify-content-center">
+          <h5>Welcome to My Portfolio</h5>
+          <h1 class="text-primary">HI I'M</h1>
+          <h1 class="text-dark">DIMAS SETO AJI</h1>
+          <h1 class="text-primary">Software Developer</h1>
+          <p>
+            Collaborating with teams to build scalable and efficient software
+            solutions.
+          </p>
+          <div
+            class="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
+          >
+            <a href="#" class="btn btn-primary rounded-pill px-4"> Hire Me! </a>
+
+            <a href="#" class="btn btn-outline-primary rounded-pill px-4">
+              Download CV <i class="bi bi-download ms-1"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="https://img.pikbest.com/origin/10/37/43/31apIkbEsTi5b.png!w700wp"
+            alt="Profile"
+            class="img-fluid rounded-circle"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- brand section -->
+    <section class="brand-section text-center">
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-4">
+          <div class="col-6 col-md-2">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAsVBMVEX///8aGRgAAAAhYJsWFRQAVJUVFBPx8fH8/PwMCwlJSUgAVpb29vb5+fkoJyYSEA/Nzc2Pj4/q6uq+vr5oZ2dtbGwGBAAgHx7e3t7T09Onp6ctLCt0dHOcm5sZXJl9fXyUlJTBwcFfX15ZWFju8/e3yNuysbGLiopBQD8ASpA6OTh8nL/i6vHY4uyqvtRKeqq8zN2ass3L1+U/daguaqFdhrFUga6GpcVskLd9ncAAQoxFgNfhAAAH7klEQVR4nO2ae1/iOhCGIU0LpUChIFctVxFRRNF13f3+H+zknrR09bfHcvbs7vv8oW2TlmQy886kUKkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP5uxlf9HSEkbsx6zV89ll9Cc04JCQNardKYGaI//tUD+u+ZEMKmbwnJ7FcP6dOsf6p3c5W1AIc06mcam6a27PcvGP3WWR5/ff8zvZMpyVuAG6F/lqFZViTkkF7Jz13LxXv+mXua01DPm8ZxYI1Q9uCyXEnDlx90D+Lv/uWjfnWJOF5pLxgQ2miw1KBOg6Ht3GKYm/lJq+l6cG3U6XTGo2w6qVtazWYzF1pj+THx7ucn+T5Pe/Hv2vug34y2GdU5P1brUY3J5ZjPK+mSrCOMwvZwOIwv7ejZ6ZBszPnNlqcSRtCYGDMsdm3DcEhj2t5eOSOot2PheGT0ySk7jxR/17fy7OH2A03cxZRBFuwwUXIY7sxoNsoIYV+dis4T3TyR56r7YstKCqpDiVAdQI0BzRETxwgXKhI2lbK4lv+efPn/8fbp3e6JGkDCjmfaJx3fVtcokWcD0bmjW/tcPuhQ9K/3SZxR0kAYlolMgczSgYmHnhrBZaUsHqUMVJ5T+f8+8t7NN3IENKgYc1BhD01N+QYRnr2N7TGHF1LVeCU6tk+mqgK8U5hqtJMo54unpeXftS9T4TpVflD5Er29d4NcZ+Hqc7Ug80yHZWgdpSZ6BFPdNhLnpMsO6zqjuPlEWvOqyAYDveyNUBq+PDG4M8uvjFHZ+/6dbT/xiamUMB6e08BZcYN0/yqpVfSKmuErtRAur4I6JMPtdqrziQzxfqiaMgzkI5TqWon5NOvbV22DSAVF5cGPXo7q6te8QNZ7vUVvseglJkOFuXroUvkBt55cUTte2cZXW8tKXyxn81KdCuWrCmcPL7o3nG53Pp9fMYSpO/q+0kzA5qscfx2lB3sx8p+fHo8Pr4f3csS8WJ5XMnHF/FiuKDGbqDbVoXEjrXOjWxqxsYE2T63gM5tD4Xtxu8Td6ZdI+/2L5+/11fu31L+9vU0LMkRv22BsZ2bY1YwisuAZyFVc8hMZLUQH1MhoSYvyXnSYE3thg15ORJJdQ3wm96a+sk+ZW9M01QL4llpHYG5xfHzcF+WHCxIzuAyqDEYH2Q5jx6uT3Gw2ZqJynuFFRdeciY2aG92mqA9D8ZlLXl44IVMSaz/V24Oj70XvVwYC4c1C1bQcLLMdus5K9XKzkTmFVwtKNIaiFJxy5HN5ApTB5IjeSmaCKvMj0Wuw+vzMLfe+52l3fE696PjRDSNbIamKUCQ6h60jBzc5Sdzx0KAs0OttXR0KgiBQRQVXSDlRJ/fpHdJYpcW4SCn+NcwGkVYB5ghe9PjBDXLilJoJ5iVRCdpA7OiU0HUybcHOmPIEroMj9RE2ElUuoKqisFVnKax9L/2qT75F3kk41K+z55cD4/+Xqg5YZDpo7+DjbOUEvmeqhU2xDbh5VFvo+HszlF5CCx3v06SeDYbKgZ1Fh73TvH/JJUcl9FyTVCWTs4G8GrT5sVQMFscKFRob40N0kC2DuOxp0XBlbxVaO4WN0iaveGUi8GDODswTUv9wLSdeP375nhOIxFllbYNMLNRVMM/5ycaW1QK1eRgblWvPeAF0pZjPu9yeu2wA2QdJsxWWDZ/iic3as2t95zNXSCP/5e3b3SG9PdHInuPdStqt6nM6VjN1EWVWVO6maNwy1igq+esFFVLNvrLMuV0Z8MSQOnuk4zO3gpemzBD+20mVODOqZvw5W6/M3GBWG2dtA2mfuMH3S8HJnZqx6eWw1MFgC8sSYRnR8x+cC8e7F+YJqff6VPBuVa6f3AMpn2BB3bO72NCmee0pZjpzUx63hk4tmWNDCuaqd5LliwHnkTlCPiWuGYWb85abDo2DUjK86E42m81k0lUqmNRqNZs5+ovOeDQaqUzZM35QJRfj/KtC7TzZd7ILpaHVpHIOeDL4uC6Q6GiXcXwxMEJltrnaZQlp2GhRrc72Qm01WEs4bcivCvr9ZYM37QIrKIbFGWpkhz13BM//QZncyizTRC2zvPijQkcOd26jxUVmyhvTQoM4VAyqLb0LsVsM94PzlimPJ2GE6LXoq5V11jROhcSZv2MEntuap99AqUxZaD7x3HFuiyGRNou35c9eccfzI9PBryf7xOs0mxmcCkkwI0HBXKQN+MMmp1NVNxeZTzRNclsMicql50gKii/CCF6UfnNrxMrj8/esTDRPNu+9Nik2g/KV7kmzrn1uCAlpQZN0tVzWVMXyGWoDy50IB14jvnx72N+ztLC/vkuj/Ft2KYk0dN/hdGY7UoTS9dFsmmvQNydXK5pr4mWR+sallftgybnkQPAgKiMZEr4gStMTnZQFUJzfvdeTUadnWTA6TqVbryUJz5UK985mMl7wlCrYCLMV9OL9koKrZXN/MFZQRF6+UG66e4E/ksdntvae8Yb0VCH1u99yt+//L/ZPB09EQvTydn2yVUiUCWj8h//gqHW/Px73p5XCqD0lg4zi/31MbIor8dve34ul/bVJ9Q8PhR/RCuw7jPK+5/u9GJvK9uw/tvrfMlcFIvkDfnn4b2nIdwPLyVmLVQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA38Q/DS1/g8RboZwAAAAASUVORK5CYII="
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="https://download.logo.wine/logo/Spotify/Spotify-Logo.wine.png"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS0AAACnCAMAAABzYfrWAAAAolBMVEX///8AAAAHttT6+voAstIrKytfX1/r6+sAttRLS0sAs9KRkZHx9fZPVVYeHh6Dg4Ovr6+dnZ08PDzKysqlpaW8vLzp6elkZGTCwsI+Pj43NzckJCRWx96t3+tWVlbc3Nxzc3OYmJh7e3sUFBSi2+guLi3Y8PXW1tbp8/VQUFCvsrOLi4v0/P1zdnbL6/Jgxt2R2eh60uQ1v9m95O4NDxCX1+a3U6PjAAAIQklEQVR4nO2a6XbqOhKFPSVm8A2TmQLBQJhCCBxI8v6v1lJpsGQbbG5fVnev3t/5cWxZ43apXKrgOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8Lc4bN44m8N/eiL//Wz+XLxA4E3f/AeO1I7jePTA/h/P5tQIvJonqHmB9+cfH2I/bEZ08e667qxam3jYue+9RQPGvTO7l1XQ8Gwa3uafHWLONHqhpT+xq+dKbeqs5viuURashfvIjcE4BzUvR/Bdtfkgjsvr8GW4bX5ZWa0etelVnQan83i1/gR5rdh+DFaVWn+uXbdVWiuhlXf4ZWW1RtSmX2kWkserteGW1Whk9yKzrqzziormwedXrpYz5vUSflVZLd+9e+2PV+vCpLqczqdLznllravQ9VdUK/xwJ2JTVfdbSdftJpVqKh6u1iYITsKjH09Z/xW8mTUvhZ6solrMMuX/1dVK21Tl4WpNja/fMWddZx2qbi5e4TQqq6W4R617ebRaO0uDTdZ3NbzVjqqdc/tSwuf3mSkb9Prb8NqI/45aUTLqJzmD8we9UULj5dTyB6N+LzMVP+mPstPj1SoEat8763aX8/XM/V+mHvNptfw7+6rXP/j8Jh/1en0oC5PlC7nn9Z7F7etud0Kr67CrOj1Xaj2/drsfqqfha/dVdeCzB69zdjHXheN6fRw74Zw6dufWupKvdyp93efU6j//0KPxIi0L57LMOE/EEyp6X5SZZfZF5eW6EX/95RqsRVnTKIna/L9IFb9balFFue7Q1RVlnBXL7oXCvKTZS3s2woqvtHQcxaZayasxu7YSMC36kBUHT7roZ1siV5aDl48lyIMV1LXUeqWiD7NosrDUerHUSoxFkKqufNuf/DrMqTU0e9Yxa9d6YU1DrZFr0UrfhJ4x1fTfzbK75brk5aoFp6KqllpPvGSmbibpgytqObyK3IrPVPFL3LwqkWy16N2Plb1kZmCO5+d14TTVmGzUmfh/zotadDmejc3Wd3DOBveNRpFlsf3eapEhzHhegZtJLEYeMYGi/rhEraWenC+1oBvalXGRWustqyB2mzRK8lNuXYy3NtUSe5vNbDvoNYX19KSEs0iKue7rvrlJDfi5tNR15TlOA52SqHlBML1xxOZjqQhCrFp/Iee31erJJaSbhrYB7cqkQK2u7JZcD/UQFY5H6126unc2L267s4HZt7OVgofa7hznZXlvgCfY/U5rIttVm553t2qaatFklumzv26qRbmblrFMMWm+sifd3FBLh/W0G/nFIjPeTKsV2S2c9bqnJyhdkzQi31jALbs6HFe/5+nv6q1YjcNu8/292ZVlUk21xmoZksFttbhI9G3gIceXvPHTd22r9aS7bapheFc/ufH4mtuGxXBCw5k92WkNalOWRTnyIIrDs6Xnv5/NMtXKvGr5sq+qRRtwwDcFW3Qob3qpUdhqpQeGWPYa2cWOyIiRWi09cH62bE93jOOn2LM/rdF1yzpe0lwpd+M3XdNNjBnTq7WSyIubakXyrfKlDUnZ2KyYjbd0r2Q4oYxB8uPxVXMrL0ok6rDiZakEi1SRO7ySHcqntBqNaumsHIZaNHvLzO3oNKsWuSh2yT9mfbKYD7FO2V+ZWtvceDo6Hbs6OrHpvWhxZvL0E9Z10aQo95gLEfi370qUUEbWtqz307mtFn3d/ERUoq0YhYYCldTKj6fUqhfO19+ryMZ9V4fFXhr55s1rVZgs9YLpHSJpTN9hL8qRH7vratEm2MaygIflIy6gctxlaoXm2MRQqTVXF0WEbXniSPX0R0NpdNlswIa5rEbA/mWz8Y2sXKUfRMdWq+va3ygRf11Xi7zygjssHvss2P9L7nPn8mmZWlRsjidcEBepk9ukNpGIa63jeY/Oi51MzWkjqJ1WqxX7KNZuynWosjdNtZqZ4VplanGz+nmXa+cb64U/VY67VK1lZrylVot2t+Hm46YyNCXhPt13WzP0+rKXx0xrJR77bzlfb8oVeW9OOfzEpXItkb31926ZWvJ8ItelcgFqYaVqJfZ4sdGcTp5z9YSFJS97Emas7Ekf6sO5jrbe3Zy3m17SaPRwybiwhndUz45ecbI0A31QerImnRrdL9r7oXKdN9RypMcV9iFMUWtfrpbwU644rwyeTbGFkGOK28NPOUjE609E6ECZnpHcs6SkCC9s2zpcrNtTLrl8Oh4Y3+yoWCmmEDNx1xP6YMtUwHj4nKZSbqkl3Id831txs6+ulu/q8dJklnhzC3EzmT3LAGGtpzeM24uuqipTEM12/GxbKpH9jUNOLv43fnZGZFeVfj4yUJOkM0xoJYvoOHNTrSRtyhBZTf1VKldLttfob6KTHj4laz9ffcHrja2iV8ciJ0FOLhZ7ce8fHLM1i4mtcSJz8F5JdOqIyFQLQQtMHYetVpr8N9RyBj/GeFsrd7owVXgWpVuzbE5Fft0ompQmIU6F4Vfub69XGQmB1Kl3r/bEcKBPdHLD0nP7VyNUrhKW5Dja+ln6O4jrajl+R5nzPBQC6c2T6Cz0WO+vUJdN9I7vaMVbFTz1b16uWnWx+BSSkflXlKS9WLZi7ov8MAyFT4rYlajBL9I36OtyzsC8oZqhLk/bRLpXwagzH362Q2s8WXO0mA8XbSusCvfN+XDeMVPKfo9VGzb71TKBR8+OVGuNSsHD/yv+b43/DaxGLotF+bcTgODwfb549Cm8nN/wW8oKHA673eHBvxUDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/bf4F1Ep5Fj7zWXMAAAAASUVORK5CYII="
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="https://i.pinimg.com/1200x/4a/2b/e7/4a2be73b1e2efb44355436c40bf496dd.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU9OCPJsgnJ-po35PBUM552fcrPIhm01JFYg&s"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-6 col-md-2">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8n77fO5AyVwPTluofWck60uf7CGFLlO7Hjw&s"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2 left image -->
+    <section class="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <img
+              src="https://img.pikbest.com/origin/10/37/43/31apIkbEsTi5b.png!w700wp"
+              alt=""
+              class="img-fluid rounded-circle"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <p class="section-tittle">ABOUT ME</p>
+            <h2 class="fw-bold">
+              <span class="text-primary">20 Year's Experience</span> <br />On
+              Product Design
+            </h2>
+            <p class="text-muted mt-3">
+              Hello there I'm <strong>Dimas Seto Aji.</strong> I Specialize in
+              web design and development, and I'm deeply passionate and
+              committed to my craft. with <strong>20 years</strong> of
+              experience as a professional graphic designer.
+            </p>
+
+            <!-- buttons -->
+            <div class="d-flex flex-wrap gap-3 my-4">
+              <button class="btn btn-text-primary rounded-pill px-4">
+                Main Skills
+              </button>
+              <button class="btn btn-text-primary rounded-pill px-4">
+                Awards
+              </button>
+              <button class="btn btn-text-primary rounded-pill px-4">
+                Education
+              </button>
+            </div>
+
+            <!-- button skills -->
+            <div class="mb-3">
+              <small class="fw-semibold">User Experience Design - UI/UX </small>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-primary" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <small class="fw-semibold"
+                >Web & User Interface Design - Development
+              </small>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-primary" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <small class="fw-semibold">Interaction Design - Animation </small>
+              <div class="progress mt-2">
+                <div class="progress-bar bg-primary" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" style="padding: 30px">
+      <div class="container">
+        <!-- section 3 -->
+        <div class="text-center mb-5">
+          <p class="section-subtitle">SERVICES</p>
+          <h2 class="fw-bold">
+            Exploring My Design <span class="text-primary">Skills</span>
+          </h2>
+          <p class="text-muted">
+            We transform your ideas into a distinctive web project that both
+            inspires you and captivates your customers
+          </p>
+        </div>
+
+        <!-- CARDS -->
+        <div class="row g-4 align-items-stretch">
+          <!-- CARD 1 -->
+          <div class="col-lg-4">
+            <div class="service-card primary h-100">
+              <i class="bi bi-window fs-1 mb-3"></i>
+              <h5 class="fw-bold">Website / App Design UX / UI Design</h5>
+              <p>
+                Creating Engaging Digital Experiences for Websites and Apps
+                through UX/UI Design
+              </p>
+              <a href="#" class="text-decoration-none fw-semibold">
+                Learn more <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-lg-4">
+            <div class="service-card light h-100">
+              <i class="bi bi-bar-chart fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold" style="color: black">
+                Strategic Marketing and Creative Content
+              </h5>
+              <p class="text-muted">
+                Elevating Brands and Engagement through Strategic Marketing and
+                Creative Content
+              </p>
+              <a href="#" class="text-decoration-none fw-semibold text-primary">
+                Learn more <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-lg-4">
+            <div class="service-card light h-100">
+              <i class="bi bi-shop fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold" style="color: black">
+                Multivendor eCommerce Website Solutions
+              </h5>
+              <p class="text-muted">
+                Unlocking the World of Multivendor eCommerce Websites
+              </p>
+              <a href="#" class="text-decoration-none fw-semibold text-primary">
+                Learn more <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- milestone section -->
+
+    <section class="milestone-section">
+      <div class="container">
+        <!-- header -->
+        <div class="text-center mb-5">
+          <p class="section-subtitle" style="color: white">OUR MILESTONES</p>
+          <h2 class="fw-bold">
+            What sets Our Studio Apart <br />
+            for your project?
+          </h2>
+        </div>
+
+        <!-- stats -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-card h-100">
+              <div class="stat-number">8300+</div>
+              <p class="stat-text mt-2">
+                Figma ipsum component variant main layer. Hand.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-card h-100">
+              <div class="stat-number">100%</div>
+              <p class="stat-text mt-2">
+                Figma ipsum component variant main layer. Hand.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-card h-100">
+              <div class="stat-number">3.5K</div>
+              <p class="stat-text mt-2">
+                Figma ipsum component variant main layer. Hand.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-card h-100">
+              <div class="stat-number">240+</div>
+              <p class="stat-text mt-2">
+                Figma ipsum component variant main layer. Hand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our project -->
+    <section class="portfolio-section">
+      <div class="container">
+        <!-- header -->
+        <div class="text-center mb-5">
+          <p class="section-subtitle">OUR PROJECTS</p>
+          <h2 class="fw-bold">
+            Presenting My Design <br />
+            Portfolio and Case Studies
+          </h2>
+        </div>
+
+        <!-- filter button -->
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+          <button class="btn btn-primary filter-btn">ALL</button>
+          <button class="btn btn-outline-primary filter-btn">
+            UI/UX Design
+          </button>
+          <button class="btn btn-outline-primary filter-btn">
+            Branding Social Media
+          </button>
+          <button class="btn btn-outline-primary filter-btn">
+            Web Development
+          </button>
+        </div>
+
+        <!-- portfolio grid -->
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                src="https://themewagon.com/wp-content/uploads/2026/01/saasly.webp"
+                alt="Portfolio Item 1"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                src="https://themewagon.com/wp-content/uploads/2026/02/Pixel.io_-1200x736.webp"
+                alt="Portfolio Item 2"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                src="https://themewagon.com/wp-content/uploads/2025/08/tw-bundle-v2-1.webp"
+                alt="Portfolio Item 3"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                src="https://themewagon.com/wp-content/uploads/2018/09/slick.webp"
+                alt="Portfolio Item 4"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                src="https://themewagon.com/wp-content/uploads/2026/02/Mapple.webp"
+                alt="Portfolio Item 5"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item">
+              <img
+                src="https://themewagon.com/wp-content/uploads/2026/02/rainblur.webp"
+                alt="Portfolio Item 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="testimoni-section">
+      <div class="container">
+        <!-- header -->
+        <div class="text-center mb-5">
+          <p class="section-subtitle" style="color: #0d6efd">TESTIMONIALS</p>
+          <h2 class="fw-bold">What Our Clients Say About Us</h2>
+        </div>
+
+        <!-- Arrows -->
+        <div class="d-flex justify-content-between gap-3 mb-5">
+          <button class="btn btn-outline-primary arrow-btn">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button class="btn btn-outline-primary arrow-btn">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- testimonial cards -->
+
+        <div class="row gap-4">
+          <!-- card  1 -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="testimonial-card">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt=""
+              />
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur. Nibh porttitor aliquet
+                tellus eget egestas.
+              </p>
+              <h6 class="fw-bold mt-3 mb-0">Savannah Nguyen</h6>
+              <small class="text-muted">President of Sales</small>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="testimonial-card">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt=""
+              />
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur. Nibh porttitor aliquet
+                tellus eget egestas.
+              </p>
+              <h6 class="fw-bold mt-3 mb-0">Savannah Nguyen</h6>
+              <small class="text-muted">President of Sales</small>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="testimonial-card">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt=""
+              />
+              <div class="stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur. Nibh porttitor aliquet
+                tellus eget egestas.
+              </p>
+              <h6 class="fw-bold mt-3 mb-0">Savannah Nguyen</h6>
+              <small class="text-muted">President of Sales</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section" style="padding: 30px">
+      <div class="container position-relative">
+        <!-- Heading -->
+        <div class="text-center mb-5">
+          <p class="text-uppercase small-text">Contact Me</p>
+          <h2 class="fw-bold">Request Free Consultancy</h2>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Left Info Box -->
+          <div class="col-lg-5">
+            <div class="contact-box h-100">
+              <h6 class="fw-bold">Hotline 24/7</h6>
+              <h4 class="fw-bold mb-4">(+23) 5535 68 68</h4>
+
+              <p>
+                <strong>Address:</strong> 2972 Westheimer Rd. Santa Ana,
+                Illinois 85486
+              </p>
+              <p><strong>Email:</strong> nevaeh.simmons@example.com</p>
+              <p><strong>Fax:</strong> (702) 555-0122</p>
+              <p><strong>Work Hour:</strong> Mon - Sat: 9:00 - 18:00</p>
+            </div>
+          </div>
+
+          <!-- Right Form -->
+          <div class="col-lg-7">
+            <form>
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Name*"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email Address*"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="How can we help you?"
+                />
+              </div>
+
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="How can we help you?"
+                ></textarea>
+              </div>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="terms" />
+                <label class="form-check-label small-text" for="terms">
+                  By submitting, i'm agreed to the
+                  <a href="#" class="text-white text-decoration-underline"
+                    >Terms & Conditions</a
+                  >
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-custom text-white">
+                Request Now
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div
+          class="footer-area d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start"
+        >
+          <div class="mb-3 mb-md-0">
+            <h5 class="fw-bold mb-1">AeroVision</h5>
+            <small>© Copyright 2023. All Rights Reserved.</small>
+          </div>
+
+          <div class="social-icons">
+            <span>Follow Us:</span>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-envelope"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
